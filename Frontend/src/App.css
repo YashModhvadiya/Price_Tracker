@@ -1,0 +1,84 @@
+.app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1e1e1e; /* Dark background for the entire app */
+}
+
+.left-section,
+.right-section {
+  width: 300px;
+  background-color: #2b2b2b; /* Dark background for side sections */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4); /* Darker shadow for better contrast */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  color: #ffffff; /* White text */
+}
+
+.left-section {
+  left: 0; /* Ensure left section stays on the left */
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 320px; /* Adjusted for the width of side sections */
+  margin-right: 320px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #1e1e1e; /* Dark background for middle section */
+  color: #ffffff; /* White text */
+  height: 100vh;
+}
+
+.right-section {
+  right: 0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.4); /* Darker shadow for contrast */
+}
+
+.add-product button,
+.filter button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Solid blue for buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-product button:hover,
+.filter button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .left-section,
+  .right-section {
+    width: 240px; /* Reduced width on smaller screens */
+  }
+
+  .middle-section {
+    margin-left: 260px;
+    margin-right: 260px;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-section,
+  .right-section {
+    display: none; /* Hide side sections on very small screens */
+  }
+
+  .middle-section {
+    margin: 0; /* Middle section takes full width */
+    padding: 15px;
+  }
+}
