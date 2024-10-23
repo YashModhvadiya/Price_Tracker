@@ -15,7 +15,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?title=Gamepad",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?title=Gamepad",
               "protocol": "http",
               "host": ["localhost"],
               "port": "5000",
@@ -36,7 +36,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?maxPrice=20000",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?maxPrice=20000",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -56,7 +56,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?minPrice=20000",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?minPrice=20000",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -76,7 +76,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?minPrice=1000&maxPrice=15000",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?minPrice=1000&maxPrice=15000",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -100,7 +100,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?title=Gamepad&minPrice=1400&maxPrice=1500",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?title=Gamepad&minPrice=1400&maxPrice=1500",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -128,7 +128,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?sortRating=lowToHigh",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?sortRating=lowToHigh",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -148,7 +148,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?sortRating=HightToLow",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?sortRating=HightToLow",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -168,7 +168,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?sortPrice=lowToHigh",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?sortPrice=lowToHigh",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -188,7 +188,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/v1/products/search?sortPrice=HightToLow",
+              "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/search?sortPrice=HightToLow",
               "protocol": "https",
               "host": ["almashines-task-j4xu", "onrender", "com"],
               "path": ["api", "v1", "products", "search"],
@@ -219,7 +219,7 @@
           }
         },
         "url": {
-          "raw": "http://localhost:5000/api/v1/products",
+          "raw": "https://price-tracker-va7b.onrender.com/api/v1/products",
           "protocol": "https",
           "host": ["almashines-task-j4xu", "onrender", "com"],
           "path": ["api", "v1", "products"]
@@ -233,7 +233,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5000/api/v1/products/all",
+          "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/all",
           "protocol": "https",
           "host": ["almashines-task-j4xu", "onrender", "com"],
           "path": ["api", "v1", "products", "all"]
@@ -247,7 +247,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5000/api/v1/products/6714ebd6b38e58ed56cde5b1/check-price",
+          "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/6714ebd6b38e58ed56cde5b1/check-price",
           "protocol": "https",
           "host": ["almashines-task-j4xu", "onrender", "com"],
           "path": [
@@ -267,7 +267,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5000/api/v1/products/6714ebd6b38e58ed56cde5b1",
+          "raw": "https://price-tracker-va7b.onrender.com/api/v1/products/6714ebd6b38e58ed56cde5b1",
           "protocol": "https",
           "host": ["almashines-task-j4xu", "onrender", "com"],
           "path": ["api", "v1", "products", "6714ebd6b38e58ed56cde5b1"]
@@ -281,7 +281,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5000/api/v1/products?fields=title,price",
+          "raw": "https://price-tracker-va7b.onrender.com/api/v1/products?fields=title,price",
           "protocol": "https",
           "host": ["almashines-task-j4xu", "onrender", "com"],
           "path": ["api", "v1", "products"],

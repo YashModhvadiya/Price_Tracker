@@ -22,7 +22,7 @@ const Filter = ({ onFilterApplied, onFilterCleared }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/v1/products/search${queryString}`
+        `https://price-tracker-va7b.onrender.com/api/v1/products/search${queryString}`
       );
 
       if (!response.ok) {

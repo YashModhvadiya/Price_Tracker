@@ -13,7 +13,7 @@ const AddProduct = ({ onProductAdded }) => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/v1/products",
+        "https://price-tracker-va7b.onrender.com/api/v1/products",
         {
           method: "POST",
           headers: {
