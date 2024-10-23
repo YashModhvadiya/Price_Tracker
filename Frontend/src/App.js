@@ -14,7 +14,7 @@ function App() {
     setLoading(true);
     try {
       const response = await fetch(
-        "http://localhost:5000/api/v1/products/all"
+        "https://price-tracker-va7b.onrender.com/api/v1/products/all"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch products");
