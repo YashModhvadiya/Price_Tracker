@@ -47,6 +47,7 @@ exports.getProductById = async (req, res) => {
   const { productId } = req.params;
 
   try {
+
     const product = await Product.findById(productId).select(
       "-priceHistory -url -createdAt -updatedAt"
     );

@@ -37,7 +37,7 @@ const Products = ({ products, loading, error }) => {
 
     try {
       const response = await axios.get(
-        `https://price-tracker-va7b.onrender.com/api/v1/products/${id}/check-price`
+        `http://localhost:5000/api/v1/products/${id}/check-price`
       );
       setPriceData((prevData) => ({
         ...prevData,
@@ -56,7 +56,7 @@ const Products = ({ products, loading, error }) => {
 
   return (
     <div className="products">
-      <h1>All Products</h1>
+      <h1 id="text">All Products</h1>
       <ul className="product-list">
         {products.map((product) => (
           <li key={product._id} className="product-card">
@@ -111,15 +111,20 @@ const Products = ({ products, loading, error }) => {
           padding: 0;
         }
         .product-card {
-          border: 1px solid #ddd;
+          background-color: #030d16; /* Solid navy blue background */
+          color: white; /* White text for contrast */
+          border: none; /* Remove border for a clean look */
           padding: 20px;
           margin: 10px;
           cursor: pointer;
-          transition: all 0.3s ease;
+          transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
           display: flex; /* Display items in a row */
         }
         .product-card:hover {
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px) scale(1.05); /* 3D lifting effect */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for hover */
+            background-color: #111111; /* Solid dark grey/black on hover */
+            color: white;
         }
         .product-info {
           display: flex;
@@ -158,6 +163,9 @@ const Products = ({ products, loading, error }) => {
         }
         button:disabled {
           background-color: #ccc;
+        }
+        #text{
+        text-align:center;
         }
       `}</style>
     </div>
